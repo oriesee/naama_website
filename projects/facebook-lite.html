@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facebook Lite — Creation · Naama Gershoni</title>
+<meta name="description" content="Creation tools for Facebook Lite — emerging markets, low-end devices, and the constraints that shape them.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav><a href="../index.html">Design</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">Facebook Lite · Meta · 2020—2022</span>
+    <h1 class="reveal">Facebook Lite — Creation</h1>
+    <p class="sub reveal">Facebook Lite is the lightweight Android app built for low-end devices and slow networks, serving 100M+ users in emerging markets. I worked on the creation side — Feed Composer, Stories, Reels, and a series of stickers and tools that brought higher-bandwidth Meta surfaces to a constrained platform without breaking the experience for users who often were new to the internet.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>Product Designer · Creation</dd></div>
+      <div><dt>Surface</dt><dd>Android · low-bandwidth · emerging markets</dd></div>
+      <div><dt>Focus</dt><dd>Composer, Stories, Reels, stickers</dd></div>
+      <div><dt>Timeline</dt><dd>2020—2022</dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap">
+    <figure class="figure reveal">
+      <div class="frame"><div class="visual" id="fig-lite"></div></div>
+      <figcaption>The refreshed Lite Feed Composer — audience pill, screen header, prominent POST CTA, and a cleaner inline entry point.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Feed Composer Refresh</p>
+      <h2 class="reveal">A holistic redesign of one of the most-used surfaces on Lite.</h2>
+      <p class="reveal">The Lite feed composer was outdated and hard to parse — the Post action wasn't clearly distinguished, there was no screen header, and the inline composer at the top of Feed showed a distracting availability badge (green dot). The refresh introduced an audience pill, a prominent blue POST CTA, a screen header, and a cleaned-up inline composer, along with scoped multi-media editing capabilities.</p>
+      <p class="reveal">An earlier experiment had nearly caused a SEV: removing the bottom POST button left users unable to figure out how to post. That failure data shaped a deliberate, test-driven approach to the refresh. A parallel Composer CTA experiment was closed early after feedback from LDS — having two primary buttons leading to the same action on one screen violated guidelines. The takeaway: holistic redesign beats isolated growth hacks on shared components.</p>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Reels on Lite</span>
+      <h2 class="reveal">Bring a flagship Meta surface to the constrained platform that was excluded from it.</h2>
+      <p class="reveal">Reels had become a core surface across Meta. Lite did not support it. The work brought both consumption and creation to Lite, adapting the Reels architecture for low-bandwidth networks and low-end devices while preserving the core engagement loop. Built in partnership with the WebLite and Kite teams in TLV. One of the highest-impact Lite projects of H2 2021.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Stories on Lite</p>
+      <h2 class="reveal">A creation toolkit assembled across many small launches.</h2>
+      <ul class="clean reveal">
+        <li><strong>Voice / Audio Sticker.</strong> Audio as an integrated part of the Lite Story experience — validated through XFN UXR in emerging markets where voice is a natural creation medium.</li>
+        <li><strong>GIF Sprout.</strong> A lightweight GIF creation tool inside the Lite Feed Composer.</li>
+        <li><strong>Mention Sticker.</strong> Tagging friends in Lite Stories to drive social engagement.</li>
+        <li><strong>Question Sticker.</strong> Adapted to Lite alongside existing consumption-side designs.</li>
+        <li><strong>Stories Mid Card.</strong> Mid-card experiences between Stories — music-themed variants and media nudge animations to encourage creation when new media was on device.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Process &amp; system contributions</span>
+      <h2 class="reveal">Standardize the small things across platforms.</h2>
+      <p class="reveal">The Cancel / Discard Bottomsheet project standardized a fragmented experience: iOS, FB4A, and Lite all showed different confirmation dialogs when users tapped back mid-creation. The work moved from a dialog to a bottomsheet and tested color variants for discard/keep CTAs — surfacing the insight that one emphasized color per sheet works better than three. Approved by FAST staff for cross-platform testing.</p>
+      <p class="reveal">Alongside the product work, I established the FBLite Creation Figma team and an Asana-based design tracker — giving engineering, PM, and UXR open real-time access to design files rather than waiting for handoffs. A "What I Learned Designing for Creation on FB Lite" presentation synthesized two years of learnings on emerging-market constraints, mental models, and patterns that worked.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next"><span class="lbl">Next</span><a href="default-privacy.html">Facebook App →</a></div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy"><span>Naama Gershoni © 2026</span><span>References publicly announced features</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js"></script>
+<script>
+function fill(id, svg){ const el=document.getElementById(id); if(el) el.innerHTML=svg; }
+fill('fig-lite', `<svg viewBox="0 0 900 506" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="506" fill="#ece8df"/>
+<rect x="390" y="60" width="120" height="380" rx="14" fill="#f6f4ef" stroke="#1a1916" stroke-width="1.5"/>
+<rect x="405" y="80" width="60" height="6" rx="2" fill="#1a1916"/>
+<rect x="475" y="76" width="20" height="14" rx="7" fill="transparent" stroke="#1a1916" stroke-width="1"/>
+<text x="485" y="86" text-anchor="middle" font-family="monospace" font-size="6" fill="#1a1916">PUB</text>
+<rect x="405" y="110" width="90" height="50" rx="4" fill="#dcd6c9"/>
+<rect x="405" y="170" width="80" height="6" rx="2" fill="#c8c1b1"/>
+<rect x="405" y="184" width="70" height="6" rx="2" fill="#dcd6c9"/>
+<rect x="405" y="380" width="90" height="40" rx="3" fill="#1a1916"/>
+<text x="450" y="404" text-anchor="middle" font-family="monospace" font-size="9" fill="#f6f4ef" letter-spacing="1">POST</text>
+</svg>`);
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shutterfly — Naama Gershoni</title>
+<meta name="description" content="Senior UX & UI design for Shutterfly's photo personalization products.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav><a href="../index.html">Design</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">Shutterfly · 2018—2019</span>
+    <h1 class="reveal">Shutterfly</h1>
+    <p class="sub reveal">Shutterfly is a consumer platform for printing personalized photo products — books, cards, calendars, and gifts. As a Senior UX &amp; UI Designer, I worked on the creation and personalization flows that move users from photo library to finished product across web and mobile.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>Senior UX &amp; UI Designer</dd></div>
+      <div><dt>Surface</dt><dd>Web &amp; mobile · creation tools</dd></div>
+      <div><dt>Focus</dt><dd>Personalization, editing, engagement</dd></div>
+      <div><dt>Timeline</dt><dd>2018—2019</dd></div>
+    </dl>
+  </section>
+  <section class="wrap">
+    <figure class="figure reveal">
+      <div class="frame"><div class="visual" id="fig-sf"></div></div>
+      <figcaption>Creation flows for turning a photo library into personalized print products.</figcaption>
+    </figure>
+  </section>
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Mission</p>
+      <h2 class="reveal">Make personalization feel approachable for users who don't think of themselves as designers.</h2>
+      <p class="reveal">Creation tools depend on shrinking the gap between user intent and output. The work focused on smart defaults, forgiving editing, and guided flows that produce a quality result without putting design decisions on the user. The product served both casual users who wanted speed and more invested users who wanted control.</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next"><span class="lbl">Next</span><a href="zeek.html">Zeek →</a></div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy"><span>Naama Gershoni © 2026</span><span></span></div>
+  </div>
+</footer>
+<script src="../assets/main.js"></script>
+<script>
+function fill(id, svg){ const el=document.getElementById(id); if(el) el.innerHTML=svg; }
+fill('fig-sf', `<svg viewBox="0 0 900 506" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="506" fill="#ece8df"/>
+${[[300,170,-6],[450,150,4],[600,175,-3]].map(c=>`<g transform="rotate(${c[2]} ${c[0]} ${c[1]+90})"><rect x="${c[0]-70}" y="${c[1]}" width="140" height="170" rx="2" fill="#f6f4ef" stroke="#dcd6c9" stroke-width="1.5"/><rect x="${c[0]-58}" y="${c[1]+12}" width="116" height="100" fill="#dcd6c9"/></g>`).join('')}
+</svg>`);
+</script>
+</body>
+</html>

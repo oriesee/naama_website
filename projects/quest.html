@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meta Quest — User Education · Naama Gershoni</title>
+<meta name="description" content="Designing how Meta Quest teaches new users — Contextual Tips, Assistant Tutorial, Assistant Opt-in V2.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav><a href="../index.html">Design</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">Meta Quest · Reality Labs · 2022—2024</span>
+    <h1 class="reveal">Meta Quest — User Education</h1>
+    <p class="sub reveal">User Education (UE) on Meta Quest is the system that teaches new users how a VR headset works — what to press, where to look, how to invoke the Assistant, what's safe to do in a 6-degree-of-freedom space. I worked across the platform-wide education framework and the specific surfaces that introduce the Meta Assistant on Quest.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>Product Designer</dd></div>
+      <div><dt>Surfaces</dt><dd>VR Components · Assistant · Tutorial &amp; Setup</dd></div>
+      <div><dt>Focus</dt><dd>Platform-level education, contextual guidance</dd></div>
+      <div><dt>Timeline</dt><dd>2022—2024</dd></div>
+    </dl>
+  </section>
+  <section class="wrap">
+    <figure class="figure reveal">
+      <div class="frame"><div class="visual" id="fig-quest"></div></div>
+      <figcaption>Tips, tutorials, and opt-in moments that introduce the Meta Assistant on Quest.</figcaption>
+    </figure>
+  </section>
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Contextual Tips</p>
+      <h2 class="reveal">A platform-level system for teaching users at the right moment, not in a tutorial.</h2>
+      <p class="reveal">Quest users were missing features because there was no system for surfacing guidance in context. Contextual Tips was a framework — not a one-off feature — for how the entire Quest platform teaches users. The work mapped every instance of teachable actions like "Double press Oculus button," audited the existing What Can I Say (WCIS) experience, designed flow logic for when and where tips should appear, and validated the approach through moderated UXR. The accompanying Design Process and Responsibilities document defined how the UE design crew operates and introduced the weekly design-update format adopted across the team.</p>
+    </div>
+  </section>
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Assistant Tutorial &amp; Setup</span>
+      <h2 class="reveal">Rebuild the first experience that introduces the Meta Assistant on Quest.</h2>
+      <p class="reveal">The Meta Assistant's tutorial and setup flow on Quest was poorly understood by new users. The work audited the existing flow, mapped friction points, and redesigned the experience end to end — including toast messages, NUX screens, and the overall setup sequence. A parallel WakeWord screen analysis weighed discoverability against added friction in the newer Always-on Oculus (AoO) Tutorial.</p>
+    </div>
+  </section>
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Assistant Opt-in V2</p>
+      <h2 class="reveal">A consent moment that aligned with new privacy requirements without adding friction.</h2>
+      <p class="reveal">The V1 opt-in flow for Meta Assistant didn't meet evolving privacy and trust requirements. The V2 proposal redesigned the opt-in experience to align with the SG (safety gate) framework while keeping friction low — a precursor to the consent-design work that became central to the WhatsApp role that followed.</p>
+    </div>
+  </section>
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next"><span class="lbl">Next</span><a href="facebook-lite.html">Facebook Lite →</a></div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy"><span>Naama Gershoni © 2026</span><span>References publicly announced features</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js"></script>
+<script>
+function fill(id, svg){ const el=document.getElementById(id); if(el) el.innerHTML=svg; }
+fill('fig-quest', `<svg viewBox="0 0 900 506" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="506" fill="#1a1916"/>
+<rect x="200" y="180" width="500" height="140" rx="70" fill="none" stroke="#f6f4ef" stroke-width="2"/>
+<circle cx="320" cy="250" r="50" fill="#1a1916" stroke="#f6f4ef" stroke-width="2"/>
+<circle cx="580" cy="250" r="50" fill="#1a1916" stroke="#f6f4ef" stroke-width="2"/>
+<path d="M370 234 q80 -28 160 0" fill="none" stroke="#f6f4ef" stroke-width="2"/>
+<rect x="380" y="380" width="140" height="40" rx="3" fill="#f6f4ef"/>
+<text x="450" y="406" text-anchor="middle" font-family="monospace" font-size="11" fill="#1a1916" letter-spacing="1">DOUBLE-PRESS</text>
+</svg>`);
+</script>
+</body>
+</html>

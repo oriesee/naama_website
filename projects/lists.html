@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lists & Quick Replies · WhatsApp Business — Naama Gershoni</title>
+<meta name="description" content="Migrating WhatsApp Business from Labels to Lists across Web, Android, and iOS — and connecting Lists to Quick Replies for measurable signal lift.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav>
+      <a href="../index.html">Design</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">WhatsApp Business · SMB · 2026</span>
+    <h1 class="reveal">Lists &amp; Quick Replies</h1>
+    <p class="sub reveal">WhatsApp Business uses Lists to help small and medium businesses organize their customers — segmenting chats into groups like leads, returning customers, or campaign cohorts. I worked across two connected efforts: migrating the legacy "Labels" system to "Lists" on Web (matching the existing mobile experience), and embedding Lists into Quick Replies to convert routine business actions into structured customer signals.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>Product Designer</dd></div>
+      <div><dt>Surfaces</dt><dd>Web · Android · iOS</dd></div>
+      <div><dt>Focus</dt><dd>SMB tools, signals, inbox organization</dd></div>
+      <div><dt>Timeline</dt><dd>Apr — May 2026</dd></div>
+    </dl>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Labels → Lists migration</p>
+      <h2 class="reveal">Bring Web to parity with mobile, and add SMB-specific intelligence on top.</h2>
+      <p class="reveal">Mobile (SMBa/SMBi) and consumer had already migrated from the legacy Labels system to Lists; Web was still on Labels. The migration brought parity through a refreshed visual language — color dots, unread counts in filter pills — and added <strong>Suggested Lists</strong>, an SMB-specific feature that replaces auto-created predefined labels with smart suggestions during list creation and assignment. The Web migration was built using an AI Pod approach, with design and engineering collaborating directly in code and significantly reducing implementation time with very little Figma. Android shipped in phased geo rollout. iOS in progress.</p>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Quick Replies × Lists</span>
+      <h2 class="reveal">Turn a routine business action into a structured customer signal — at zero cost to the user.</h2>
+      <p class="reveal">67% of Quick Reply users — approximately 1.3M businesses, including ~240K CTWA advertisers — do not use Lists. That's a major missed signal opportunity: Lists drive 95% of all CTWA signals on the platform. Data analysis revealed the opposite end of the spectrum: businesses who use both treat them as a natural pair. <strong>47% of Quick Reply and labeling actions occur within 5 minutes of each other</strong> (expected by chance: ~5%), and "both" users send 3.2× more Quick Replies and apply 1.6× more labels.</p>
+      <p class="reveal">The feature embeds an optional "Add to List" selector into Quick Reply creation. When a Quick Reply is sent, the chat is automatically added to the associated list(s) — zero additional taps at send time. All configuration is one-time during setup. The send experience itself is deliberately untouched.</p>
+      <ul class="clean reveal">
+        <li><strong>Approved on iOS and Android.</strong> Experiment ramping: 1% as of May 8, full rollout target June 12.</li>
+        <li><strong>Projected +150K—300K CTWA signals/week.</strong></li>
+        <li><strong>Projected uplift: +1.5—2.0M labels/week, +22—29%</strong> on daily CTWA label signals.</li>
+        <li><strong>Up to +240K businesses</strong> converting to List users.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <h2 class="reveal">Adjacent fixes shipped alongside</h2>
+      <p class="reveal">On WA Business Web, "Add to List" from a chat context menu was forcing users into multiselect mode before applying a list — friction on a single-chat action, no clean bulk path either. Given that Lists drive 95% of CTWA signals (~31K/day), every friction point is a lost signal. The fix separated the two intents: the context menu now opens the list picker directly, while a new "Add to List" option in the multiselect overflow enables intentional bulk labeling.</p>
+      <p class="reveal">A broader Lead Taxonomy Strategy was also defined — framing how Lists interact with lead funnels, including mutually exclusive list behavior as contacts move through stages (e.g., a lead cannot be in both "New Lead" and "Converted" simultaneously). This informs future Quick Reply × Lists and lead-growth work.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next">
+        <span class="lbl">Next</span>
+        <a href="3rd-row.html">3rd Row List Names →</a>
+      </div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy">
+      <span>Naama Gershoni © 2026</span>
+      <span>References publicly announced features</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/main.js"></script>
+</body>
+</html>

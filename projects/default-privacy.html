@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facebook App — Composer & Privacy · Naama Gershoni</title>
+<meta name="description" content="Default Privacy / Audience Selector across six platforms, and Stories Publishing 'Happy Path' on Facebook.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav><a href="../index.html">Design</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">Facebook App · Meta · 2019—2020</span>
+    <h1 class="reveal">Composer Publishing &amp; Privacy</h1>
+    <p class="sub reveal">On the Facebook App, I worked on the surfaces where people share — what they say, who they say it to, and what happens after they tap Post. The work spans the Default Privacy / Audience Selector system that shipped across all six Facebook platforms, the Stories Publishing "Happy Path" redesign, and a Sprouts quality audit. The throughline is the same: make the moment of sharing feel intentional and reliable, at platform scale.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>Product Designer</dd></div>
+      <div><dt>Surfaces</dt><dd>WWW/Comet · mTouch · mBasic · FB4A · iOS · Lite</dd></div>
+      <div><dt>Focus</dt><dd>Privacy, sharing, post reliability</dd></div>
+      <div><dt>Timeline</dt><dd>2019—2020</dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap">
+    <figure class="figure reveal">
+      <div class="frame"><div class="visual" id="fig-priv"></div></div>
+      <figcaption>The audience selector with dynamically bolded names — and the NUX blocker that introduces it on first share.</figcaption>
+    </figure>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Default Privacy / Audience Selector</p>
+      <h2 class="reveal">A cross-platform framework for who can see what people share.</h2>
+      <p class="reveal">Facebook users across the six platforms were posting to unintended audiences at scale, generating UNOs (unintended outcomes) in post visibility. The work introduced a system — not a single feature — that made audience selection clear and intentional everywhere people share on Facebook.</p>
+      <ul class="clean reveal">
+        <li><strong>NUX blocker.</strong> A first-time educational screen that establishes audience awareness before the first post.</li>
+        <li><strong>Audience Selector in Privacy Settings.</strong> A single, consistent control across all six Facebook surfaces.</li>
+        <li><strong>Audience tooltips with dynamically bolded names.</strong> Names like "Friends except…" reduced misreading — the bold treatment required identifying a gap in the FDS component library and securing an override approved by the FDS team.</li>
+      </ul>
+      <p class="reveal">Shipped across all six platforms. Established a new baseline for how Facebook communicates audience context in sharing flows.</p>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Stories Publishing "Happy Path"</span>
+      <h2 class="reveal">Make the moment after Post feel like the action actually happened.</h2>
+      <p class="reveal">Posting a Story on Facebook felt slow and unreliable — an infinite spinner, no progress feedback, and unclear confirmation. UXR confirmed users needed four things: speed, progress, confirmation, and control. The Happy Path redesigned the entire publishing flow: a progress ring replaced the infinite spinner, an optimistic view showed the Story immediately, and the Stories Tray provided visual confirmation with a color transition from opaque to full. The Content Design team adopted the language shift from "Adding" to "Sharing" across Stories surfaces based on this work.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Sprouts Audit · UX Learnings — Failures</p>
+      <h2 class="reveal">The quieter work behind the headline projects.</h2>
+      <p class="reveal">A quality and consistency audit of the Sprouts feature, and a reference document cataloging UX patterns and research for how content-creation failures should be communicated — what happens when publishing goes wrong. Both became shared resources for the team.</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next"><span class="lbl">Next</span><a href="shutterfly.html">Shutterfly →</a></div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy"><span>Naama Gershoni © 2026</span><span>References publicly announced features</span></div>
+  </div>
+</footer>
+<script src="../assets/main.js"></script>
+<script>
+function fill(id, svg){ const el=document.getElementById(id); if(el) el.innerHTML=svg; }
+fill('fig-priv', `<svg viewBox="0 0 900 506" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+<rect width="900" height="506" fill="#ece8df"/>
+<rect x="120" y="120" width="280" height="270" rx="4" fill="#f6f4ef" stroke="#1a1916" stroke-width="1.5"/>
+<text x="260" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#1a1916" letter-spacing="2">AUDIENCE SELECTOR</text>
+${[{l:'Public',a:1},{l:'Friends',a:1},{l:'Friends except…',a:2},{l:'Specific friends',a:1},{l:'Only me',a:1}].map((o,i)=>`<g transform="translate(140,${145+i*44})"><circle cx="14" cy="14" r="6" fill="${i===2?'#1a1916':'transparent'}" stroke="#1a1916" stroke-width="1.5"/><text x="40" y="19" font-family="sans-serif" font-size="13" font-weight="${o.a===2?700:400}" fill="#1a1916">${o.l}</text></g>`).join('')}
+<rect x="500" y="120" width="280" height="270" rx="4" fill="#1a1916"/>
+<text x="640" y="105" text-anchor="middle" font-family="monospace" font-size="10" fill="#1a1916" letter-spacing="2">NUX BLOCKER</text>
+<rect x="540" y="160" width="200" height="6" rx="2" fill="#f6f4ef"/>
+<rect x="540" y="178" width="160" height="6" rx="2" fill="#dcd6c9"/>
+<rect x="540" y="210" width="200" height="100" rx="3" fill="#54504a"/>
+<rect x="540" y="330" width="200" height="36" rx="3" fill="#f6f4ef"/>
+<text x="640" y="354" text-anchor="middle" font-family="monospace" font-size="11" fill="#1a1916" letter-spacing="1">GOT IT</text>
+</svg>`);
+</script>
+</body>
+</html>

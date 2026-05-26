@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeek — Naama Gershoni</title>
+<meta name="description" content="UX & UI design for Zeek, a UK gift card marketplace.">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/gate.js"></script>
+<style>
+  .case-image{margin:clamp(40px,7vh,80px) 0;background:var(--paper-2);position:relative;overflow:hidden;aspect-ratio:1600/13660}
+  .case-image::before{
+    content:'';position:absolute;inset:0;
+    background-image:url('../assets/zeek-tiny.jpg');
+    background-size:cover;background-position:top center;
+    filter:blur(20px);transform:scale(1.08);
+    opacity:1;transition:opacity .6s ease;
+  }
+  .case-image.loaded::before{opacity:0}
+  .case-image picture{position:relative;display:block}
+  .case-image img{width:100%;display:block;opacity:0;transition:opacity .7s ease}
+  .case-image.loaded img{opacity:1}
+  @media(max-width:680px){
+    .case-image{margin:24px 0}
+  }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html">Naama Gershoni</a>
+    <nav><a href="../index.html">Design</a><a href="../about.html">About</a></nav>
+  </div>
+</header>
+<main>
+  <section class="proj-hero wrap">
+    <span class="eyebrow reveal">Zeek · 2016—2018</span>
+    <h1 class="reveal">Zeek</h1>
+    <p class="sub reveal">Zeek was the UK's gift card marketplace — a mobile platform for buying discounted gift cards and selling unused ones for cash. As UX &amp; UI Designer, I worked across the consumer apps on iOS and Android, covering onboarding, browsing and search, the wallet and listing experiences, and the checkout and payout flows.</p>
+    <dl class="proj-meta reveal">
+      <div><dt>Role</dt><dd>UX &amp; UI Designer</dd></div>
+      <div><dt>Surfaces</dt><dd>iOS · Android · Web</dd></div>
+      <div><dt>Focus</dt><dd>Marketplace, transactions, wallet</dd></div>
+      <div><dt>Timeline</dt><dd>2016—2018</dd></div>
+    </dl>
+  </section>
+
+  <section class="wrap">
+    <div class="case-image reveal" id="zeekCase">
+      <picture>
+        <source type="image/webp"
+          srcset="../assets/zeek_mobile_sm.webp 800w, ../assets/zeek_mobile.webp 1600w"
+          sizes="(max-width:680px) 100vw, min(1200px, 100vw)">
+        <source type="image/jpeg"
+          srcset="../assets/zeek_mobile_sm.jpg 800w, ../assets/zeek_mobile.jpg 1600w"
+          sizes="(max-width:680px) 100vw, min(1200px, 100vw)">
+        <img src="../assets/zeek_mobile_sm.jpg"
+          alt="Zeek mobile app case study — onboarding, marketplace, registration, wallet, checkout, payouts, listings, and Material Design Android screens."
+          width="1600" height="13660"
+          loading="lazy" decoding="async"
+          onload="this.closest('.case-image').classList.add('loaded')">
+      </picture>
+    </div>
+    <script>
+      (function(){
+        var img = document.querySelector('#zeekCase img');
+        if (img && img.complete && img.naturalWidth) img.closest('.case-image').classList.add('loaded');
+      })();
+    </script>
+  </section>
+
+  <section class="block">
+    <div class="wrap prose">
+      <p class="eyebrow reveal" style="display:block;margin-bottom:16px">Mission</p>
+      <h2 class="reveal">Make a peer-to-peer gift card marketplace feel as trustworthy as a major retailer.</h2>
+      <p class="reveal">Resale marketplaces depend on transactional clarity. Users were exchanging money for digital codes from strangers, often at a discount, and the design needed to remove every doubt at the points of payment, redemption, and payout. The work covered the full end-to-end experience: onboarding, hundreds of brand inventories, wallet and code redemption, checkout with multiple payment methods, and seller payout flows.</p>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap prose left">
+      <span class="eyebrow reveal" style="display:block;margin-bottom:18px">Scope</span>
+      <ul class="clean reveal">
+        <li><strong>Onboarding &amp; registration.</strong> First-time experience explaining the marketplace concept and getting users to a working account.</li>
+        <li><strong>Marketplace &amp; browsing.</strong> Buying discounted cards and selling unused ones, surfaced through search, categories, and brand pages.</li>
+        <li><strong>Wallet.</strong> A unified place to manage purchased cards, review codes, and redeem balances.</li>
+        <li><strong>Checkout &amp; payout flows.</strong> Multiple payment methods on the buy side; verified bank transfer and card payouts on the sell side.</li>
+        <li><strong>Listing &amp; inventory.</strong> Tools for sellers to list cards quickly, with monitoring for active listings.</li>
+        <li><strong>International &amp; Android.</strong> Localization across the UK, US, and Germany, and a Material Design Android build.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="pager reveal">
+      <div class="next"><span class="lbl">Next</span><a href="animations.html">Illustration &amp; Motion →</a></div>
+      <a class="all" href="../index.html">← All projects</a>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div class="links">
+      <a href="https://www.linkedin.com/in/naama-gershoni/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.behance.net/NaamaGershoni" target="_blank" rel="noopener">Behance</a>
+      <a href="../about.html">Contact</a>
+    </div>
+    <div class="copy"><span>Naama Gershoni © 2026</span><span></span></div>
+  </div>
+</footer>
+<script src="../assets/main.js"></script>
+</body>
+</html>
