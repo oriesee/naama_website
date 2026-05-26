@@ -8,17 +8,22 @@
 <link rel="stylesheet" href="../assets/style.css">
 <script src="../assets/gate.js"></script>
 <style>
-  .case-image{margin:clamp(40px,7vh,80px) 0;background:var(--paper-2);position:relative;overflow:hidden;aspect-ratio:1600/13660}
+  .case-image{margin:clamp(40px,7vh,80px) 0;background:var(--paper-2);position:relative;overflow:hidden}
   .case-image::before{
     content:'';position:absolute;inset:0;
     background-image:url('../assets/zeek-tiny.jpg');
-    background-size:cover;background-position:top center;
-    filter:blur(20px);transform:scale(1.08);
+    background-size:100% 100%;
+    filter:blur(18px);
     opacity:1;transition:opacity .6s ease;
+    pointer-events:none;
   }
   .case-image.loaded::before{opacity:0}
-  .case-image picture{position:relative;display:block}
-  .case-image img{width:100%;display:block;opacity:0;transition:opacity .7s ease}
+  .case-image picture{position:relative;display:block;width:100%}
+  .case-image img{
+    width:100%;height:auto;display:block;
+    aspect-ratio:1600/13660;
+    opacity:0;transition:opacity .7s ease;
+  }
   .case-image.loaded img{opacity:1}
   @media(max-width:680px){
     .case-image{margin:24px 0}
@@ -46,7 +51,7 @@
   </section>
 
   <section class="wrap">
-    <div class="case-image reveal" id="zeekCase">
+    <div class="case-image" id="zeekCase">
       <picture>
         <source type="image/webp"
           srcset="../assets/zeek_mobile_sm.webp 800w, ../assets/zeek_mobile.webp 1600w"
@@ -64,7 +69,12 @@
     <script>
       (function(){
         var img = document.querySelector('#zeekCase img');
-        if (img && img.complete && img.naturalWidth) img.closest('.case-image').classList.add('loaded');
+        if (!img) return;
+        var mark = function(){ img.closest('.case-image').classList.add('loaded'); };
+        if (img.complete && img.naturalWidth) mark();
+        else img.addEventListener('load', mark, {once:true});
+        // Safety net: if onload never fires for any reason, reveal after 8s
+        setTimeout(mark, 8000);
       })();
     </script>
   </section>
