@@ -63,7 +63,7 @@ header.site{
 .nav nav a:hover,.nav nav a.active{color:var(--ink)}
 
 /* ---------- hero (index) ---------- */
-.hero{padding:clamp(60px,11vh,120px) 0 clamp(40px,6vh,70px);max-width:880px}
+.hero{padding-block:clamp(60px,11vh,120px) clamp(40px,6vh,70px);max-width:880px}
 .hero h1{
   font-family:var(--serif);font-weight:300;line-height:1.06;
   font-size:clamp(2.2rem,5.4vw,4.4rem);letter-spacing:-.015em;
@@ -121,7 +121,7 @@ header.site{
 .visual{position:absolute;inset:0;transition:transform .9s var(--ease)}
 
 /* ---------- project page ---------- */
-.proj-hero{padding:clamp(50px,9vh,100px) 0 clamp(28px,4vh,56px)}
+.proj-hero{padding-block:clamp(50px,9vh,100px) clamp(28px,4vh,56px)}
 .proj-hero .eyebrow{display:block;margin-bottom:22px}
 .proj-hero h1{
   font-family:var(--serif);font-weight:300;letter-spacing:-.02em;line-height:1.06;
@@ -237,7 +237,7 @@ footer.site{border-top:1px solid var(--line);padding:48px 0 56px;background:var(
 
 /* ---------- mobile ---------- */
 @media(max-width:680px){
-  :root{--gutter:clamp(18px,5vw,28px)}
+  :root{--gutter:clamp(32px,8vw,44px)}
   body{font-size:14px;line-height:1.55}
   h1,h2,h3{overflow-wrap:break-word;word-break:break-word;hyphens:auto}
   .eyebrow{font-size:.66rem;letter-spacing:.16em}
@@ -245,7 +245,7 @@ footer.site{border-top:1px solid var(--line);padding:48px 0 56px;background:var(
   .brand{font-size:.88rem;letter-spacing:.03em}
   .nav nav{gap:18px;font-size:.8rem}
 
-  .hero{padding:26px 0 22px;max-width:none}
+  .hero{padding-block:26px 22px;max-width:none}
   .hero h1{font-size:clamp(1.4rem,5.6vw,1.85rem);line-height:1.18;letter-spacing:-.005em;max-width:none}
   .hero .lede{margin-top:14px;font-size:.88rem;line-height:1.55}
   .hero .meta-row{margin-top:22px;gap:6px 18px;font-size:.68rem}
@@ -260,7 +260,7 @@ footer.site{border-top:1px solid var(--line);padding:48px 0 56px;background:var(
   .card .cap p{font-size:.86rem;margin-top:4px}
   .card .role{font-size:.62rem}
 
-  .proj-hero{padding:24px 0 16px}
+  .proj-hero{padding-block:24px 16px}
   .proj-hero .eyebrow{margin-bottom:12px}
   .proj-hero h1{font-size:clamp(1.45rem,5.8vw,1.95rem);line-height:1.16;letter-spacing:-.005em;max-width:none}
   .proj-hero .sub{font-size:.88rem;line-height:1.55;margin-top:12px}
